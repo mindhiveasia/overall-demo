@@ -19,12 +19,12 @@ function unloadIframe(iframeId) {
 // Function to check the current page and load/unload iframes accordingly
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.href.indexOf("sage") > -1) {
-        loadIframe('sageIframe', 'http://demo-imu-photo.mindhive.asia');
+        loadIframe('sageIframe', 'https://zus.kodedigital.expert/');
     }  else if (window.location.href.indexOf("page") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
-        loadIframe('pageIframe', 'http://example.com/page');
-    } else if (window.location.href.indexOf("mage") > -1) {
-        loadIframe('mageIframe', 'http://example.com/mage');
+        loadIframe('pageIframe', 'http://mindhivepage.kodedigital.expert/');
+    } else if (window.location.href.indexOf("profile-photo") > -1) {
+        loadIframe('photoIframe', 'https://demo-imu-photo.mindhive.asia/');
     }
 });
 
@@ -32,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('beforeunload', function() {
     unloadIframe('sageIframe');
     unloadIframe('pageIframe');
-    unloadIframe('mageIframe');
+    unloadIframe('photoIframe');
 });
