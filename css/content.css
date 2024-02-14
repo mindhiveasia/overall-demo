@@ -29,6 +29,10 @@ body{
     color: #E2E2E2; /* Replace with your desired link color */
     font-family: Roboto, sans-serif;
     font-size: small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }

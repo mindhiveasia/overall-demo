@@ -7,11 +7,18 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 90vh;
 }
 
-
-
+@media (max-width: 768px) {
+    .home-page {
+        background-image: url('../assets/images/home-background.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%; /* Adjust the height for mobile devices */
+    }
+}
 
 /* Basic styling for the header */
 header {
@@ -24,7 +31,7 @@ header {
 header img {
     max-width: 100%; /* Ensure the image is responsive and does not overflow its container */
     height: auto; /* Maintain aspect ratio */
-    max-height: 15px; /* Maximum height you'd want your logo to be, can adjust as necessary */
+    max-height: 20px; /* Maximum height you'd want your logo to be, can adjust as necessary */
 }
 
 header h1 {
@@ -40,11 +47,9 @@ header p{
     
 }
 
-
 /* styles.css */
-
-
 .card {
+    margin-top: 150px;
     background-color: rgba(15, 14, 20, 0.6); /* 50% transparency */
     color: #D8D6F5; /* Change text color to white for better contrast */
     border-color: #6F6C99;
@@ -52,6 +57,13 @@ header p{
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for transform and shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Initial shadow for depth */
     /* Other styles for the card */
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px; /* Smaller top margin for mobile devices */
+        /* Keep other styles unchanged unless you need specific adjustments for mobile */
+    }
 }
 
 .card:hover{
@@ -78,16 +90,14 @@ header p{
 }
 
 .card-text {
-    color: inherit; /* Ensure that text inherits the color from .card */
-    font-size: x-small;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.card-text-nd {
     color: #6F6C99; /* Ensure that text inherits the color from .card */
     font-size: x-small;
     font-weight: 500;
     margin-bottom: 5px;
 }
+
+.card-text-h5 {
+    color: #6F6C99; /* Ensure that text inherits the color from .card */
+}
+
 
