@@ -1,0 +1,93 @@
+/* styles.css */
+/* SPECIFIC STYLES GO HERE */
+
+/* HOME PAGE */
+.home-page {
+    background-image: url('../assets/images/home-background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+
+
+/* Basic styling for the header */
+header {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+header img {
+    max-width: 100%; /* Ensure the image is responsive and does not overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 15px; /* Maximum height you'd want your logo to be, can adjust as necessary */
+}
+
+header h1 {
+    font-family: Roboto,sans-serif;
+    font-weight: 300;
+    color: #EE9A0F;
+}
+
+header p{
+    font-family: Roboto,sans-serif;
+    font-weight: 300;
+    color: #D8D6F5;
+    
+}
+
+
+/* styles.css */
+
+
+.card {
+    background-color: rgba(15, 14, 20, 0.6); /* 50% transparency */
+    color: #D8D6F5; /* Change text color to white for better contrast */
+    border-color: #6F6C99;
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for transform and shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Initial shadow for depth */
+    /* Other styles for the card */
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: translateY(-10px); /* Move the card up by 5 pixels */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Increase shadow for a more pronounced lifted effect */
+}
+
+.card-img-top {
+    width: 100%; /* Make the image fill the card width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 20px; /* Limit the height of the image */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card-product{
+    width: 100%; /* Makes the image fill the container's width */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 10px;
+}
+
+.card-text {
+    color: inherit; /* Ensure that text inherits the color from .card */
+    font-size: x-small;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.card-text-nd {
+    color: #6F6C99; /* Ensure that text inherits the color from .card */
+    font-size: x-small;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
