@@ -87,3 +87,11 @@ body{
 .navbar-custom .navbar-nav .nav-link {
     padding: .5rem 1rem;
 }
+
+@media (max-width: 768px) {
+    /* This sets the iframe height to 100vh (100% of the viewport height) on mobile devices */
+    .ratio-16x9 iframe {
+        height: 100vh; /* Adjust this value if you need to account for mobile browser chrome */
+        position: absolute; /* Optional: to ensure it covers the full screen without padding or margin issues */
+    }
+}
