@@ -3,11 +3,15 @@ body{
 }
 
 .back-button-image {
-    height: 20px; /* Adjust the height as needed */
+    height: 12px; /* Adjust the height as needed */
     margin-left: 20px;
+    margin-bottom: 7px;
     /* Add any additional styling here */
 }
 
+.navbar{
+    height: 40px;
+}
 .navbar-spacer {
     display: none;
 }
@@ -28,14 +32,16 @@ body{
 .navbar-custom .navbar-nav .nav-link {
     color: #E2E2E2; /* Replace with your desired link color */
     font-family: Roboto, sans-serif;
-    font-size: small;
+    font-size: x-small;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 1px;
     transition: color 0.3s ease-in-out;
 }
+
 
 /* Change the color for the active or currently selected navigation link */
 .navbar-custom .navbar-nav .nav-link.active,
@@ -47,6 +53,7 @@ body{
 .navbar-custom .navbar-nav .nav-link:hover {
     color: #a86e0d; /* Replace with a color for hover state */
 }
+
 
 /* Styles for the navbar brand/logo */
 .navbar-custom .navbar-brand {
