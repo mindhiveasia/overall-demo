@@ -12,6 +12,7 @@ body{
 .navbar{
     height: 40px;
 }
+
 .navbar-spacer {
     display: none;
 }
@@ -23,6 +24,7 @@ body{
         width: 140px; /* Adjust based on the actual width of your back button + margin */
     }
 }
+
 /* Custom styles for the entire navbar */
 .navbar-custom {
     background-color: #0F0E14; /* Replace with your desired background color */
@@ -41,7 +43,6 @@ body{
     letter-spacing: 1px;
     transition: color 0.3s ease-in-out;
 }
-
 
 /* Change the color for the active or currently selected navigation link */
 .navbar-custom .navbar-nav .nav-link.active,
@@ -62,31 +63,36 @@ body{
 
 /* Styles for the navbar toggler icon */
 .navbar-custom .navbar-toggler {
-    border-color: #E2E2E2; /* Replace with your desired toggler border color */
+    border-color: transparent; /* Replace with your desired toggler border color */
+    margin-top: -20px;
 }
+
 
 /* Styles for the navbar toggler icon bars (hamburger icon) */
 .navbar-custom .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23E2E2E2' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    /* The color #E2E2E2 in the URL is the bar color of the toggler */
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-size: 20px 20px; /* Ensure the SVG scales to fit the new size */
 }
 
 /* Responsive behavior of navbar links */
 @media (max-width: 991px) {
+    
     .navbar-custom .navbar-nav .nav-link {
         color: #E2E2E2; /* Replace with your desired link color for mobile */
-        background-color: #181621;
+        background-color: #0f0e14;
     }
     
     .navbar-custom .navbar-nav .nav-link.active,
     .navbar-custom .navbar-nav .nav-item.active .nav-link {
-        color: #E2E2E2; /* Replace with a different color for active links on mobile */
+        color: #EE9A0F; /* Replace with a different color for active links on mobile */
         background-color: #272642; /* Optional: background color for active links on mobile */
     }
 
     /* Styles for the collapsed navbar content */
     .navbar-custom .navbar-collapse {
-        background-color: #4E5D6C; /* Optional: background color for the collapsed menu */
+        background-color: #0f0e14; /* Optional: background color for the collapsed menu */
     }
 }
 
@@ -101,4 +107,11 @@ body{
         height: 100vh; /* Adjust this value if you need to account for mobile browser chrome */
         position: absolute; /* Optional: to ensure it covers the full screen without padding or margin issues */
     }
+    .back-button-image {
+        height: 12px; /* Adjust the height as needed */
+        margin-left: 20px;
+        margin-bottom: 20px;
+        /* Add any additional styling here */
+    }
+
 }
