@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Assuming URLs for 'page' and 'mage' iframes
         loadIframe('pageIframe', 'https://mindhivepage.kodedigital.expert/');
     } else if (window.location.href.indexOf("profile-photo") > -1) {
-        loadIframe('photoIframe', 'https://demo-imu-photo.mindhive.asia/');
+        loadIframe('photoIframe', 'https://imu.mindhive.asia/');
     }
 });
 
