@@ -86,7 +86,7 @@ body{
 
     /* Styles for the collapsed navbar content */
     .navbar-custom .navbar-collapse {
-        background-color: #4E5D6C; /* Optional: background color for the collapsed menu */
+        background-color: #181621; /* Optional: background color for the collapsed menu */
     }
 }
 
@@ -101,4 +101,81 @@ body{
         height: 100vh; /* Adjust this value if you need to account for mobile browser chrome */
         position: absolute; /* Optional: to ensure it covers the full screen without padding or margin issues */
     }
+}
+
+
+/* Table styles */
+.first-issue {
+    font-size: 1em;
+    color: #EE9A0F;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.issue-title {
+    font-size: 1em;
+    color: #EE9A0F;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Table styles */
+.container-custom {
+    padding-bottom: 10px; /* Increase the bottom padding of the container */
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: #0F0E14;
+    width: 100%;
+    margin-bottom: 20px; /* Space between each table */
+}
+
+.table thead th {
+    background-color: #0F0E14;
+    color: #6F6C99;
+    border: 1px solid #6F6C99;
+}
+
+.table tbody td {
+    color: #D8D6F5;
+    border: 1px solid #6F6C99;
+}
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+    .table-responsive-stack {
+        overflow-x: auto;
+    }
+    .table-responsive-stack thead {
+        position: static;
+    }
+    .table-responsive-stack tbody {
+        display: block;
+    }
+    .table-responsive-stack tbody tr {
+        display: block;
+        margin-bottom: 0.625rem;
+    }
+    .table-responsive-stack tbody td {
+        display: block;
+        text-align: right;
+    }
+    .table-responsive-stack tbody td::before {
+        content: attr(data-title);
+        float: left;
+        font-weight: bold;
+        color: #343a40;
+    }
+    .table-responsive-stack tbody td:last-child {
+        border-bottom: 2px solid #dee2e6;
+    }
+}
+
+
+
+/* Hover effect for rows */
+.table tbody tr:hover {
+    background-color: #2b283a;
 }
