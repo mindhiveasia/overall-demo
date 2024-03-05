@@ -124,6 +124,9 @@ body{
 .container-custom {
     padding-bottom: 10px; /* Increase the bottom padding of the container */
     margin-bottom: 20px;
+    margin-left: 20px;
+    width: 70%;
+    max-width: none; /* Remove the maximum width constraint */
 }
 
 .table {
