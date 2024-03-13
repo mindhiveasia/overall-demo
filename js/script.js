@@ -20,11 +20,13 @@ function unloadIframe(iframeId) {
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.href.indexOf("sage") > -1) {
         loadIframe('sageIframe', 'https://zus.kodedigital.expert/');
-    }  else if (window.location.href.indexOf("page") > -1) {
+    } else if (window.location.href.indexOf("page") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
         loadIframe('pageIframe', 'https://mindhivepage.kodedigital.expert/');
     } else if (window.location.href.indexOf("profile-photo") > -1) {
         loadIframe('photoIframe', 'https://demo-imu-photo.mindhive.asia/');
+    } else if (window.location.href.indexOf("location-finder") > -1) {
+        loadIframe('locationFinderIframe', 'https://zusos.mindhive.asia/');
     }
 });
 
@@ -33,4 +35,5 @@ window.addEventListener('beforeunload', function() {
     unloadIframe('sageIframe');
     unloadIframe('pageIframe');
     unloadIframe('photoIframe');
+    unloadIframe('locationFinderIframe');
 });
