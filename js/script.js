@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loadIframe('sageIframe', 'https://zus.kodedigital.expert/');
     } else if (window.location.href.indexOf("page") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
-        loadIframe('pageIframe', 'https://mindhivepage.kodedigital.expert/');
+        loadIframe('pageIframe', 'https://demo-page.mindhive.asia/');
     } else if (window.location.href.indexOf("profile-photo") > -1) {
         loadIframe('photoIframe', 'https://demo-imu-photo.mindhive.asia/');
     } else if (window.location.href.indexOf("location-finder") > -1) {
