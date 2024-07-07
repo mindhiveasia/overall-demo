@@ -59,7 +59,7 @@
     <!-- Content Section -->
     <div class="content container mt-5 container-custom" style="background-color: #0F0E14; border-radius: 5px;">
         <!-- Missed Out Order Section -->
-        <h3 class="first-issue";>Missed Out Order</h3>
+        <h3 class="first-issue";>Recognizing name from sentences</h3>
         <table class="table table-responsive">
             <thead>
                 <tr>
@@ -70,139 +70,117 @@
             <tbody>
                 <!-- Rows for Missed Out Order -->
                 <tr>
-                    <td>you missed out my order</td>
-                    <td>Please enter the order number in the correct format. (eg: 23092512345)</td>
+                    <td></td>
+                    <td>Hi! Welcome to ZUS Coffee.</td>
                 </tr>
                 <tr>
-                    <td>21122900746</td>
-                    <td>Please enter your phone in the correct format. (eg: 60123456789)</td>
+                    <td>My friends call me Jermaine C.</td>
+                    <td>Before we start, can you please provide your mobile number? (eg. 60123456789)</td>
                 </tr>
                 <tr>
                     <td>601110019991</td>
-                    <td>Sorry for the inconvenience. Can you please tell us more about what's missing in your order? We will do our best to resolve this for you.</td>
+                    <td>Thanks Jermaine C. <small>(Able to extract name well from sentence)</small></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Missed Out Order Section -->
+        <h3 class="first-issue";>Language Selection</h3>
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>User Input</th>
+                    <th>Expected Bot Reply</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows for Missed Out Order -->
+                <tr>
+                    <td>My friends call me Jermaine C.</td>
+                    <td>Before we start, can you please provide your mobile number? (eg. 60123456789)</td>
                 </tr>
                 <tr>
-                    <td>chicken missing</td>
-                    <td>It seems like certain item(s) from your order is missing. Please let us know the missing item(s) below.</td>
+                    <td>601110019991</td>
+                    <td>Thanks Jermaine C. <small>(Able to extract name well from sentence)</small></td>
                 </tr>
                 <tr>
-                    <td>Submitted successfully</td>
-                    <td>Please select your preferred refund method.</td>
+                    <td></td>
+                    <td>
+                        What is your preferred language of conversation?<br />
+                        By setting your preferred language, my replies to your messages would only be in that language. <br />
+                        Although I am English native, I shall try my best to adapt to language of your choice.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Refund: ZUS Balance</td>
-                    <td>I'm sorry I can't do what you need as an AI. Let me connect you to a real person who can help. Hang on for a moment, and they'll be here soon.</td>
+                    <td>Bahasa Malaysia</td>
+                    <td>Bagaimana saya boleh membantu anda hari ini?</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Missed Out Order Section -->
+        <h3 class="first-issue";>AI + integration to figure out refund amount</h3>
+        <p class="text-white"><small>If order has 2x Hot Latte, but user mentions 5x, it will only still refund the price of 2x hot latte</small></p>
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>User Input</th>
+                    <th>Expected Bot Reply</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows for Missed Out Order -->
+                <tr>
+                    <td></td>
+                    <td>How can I help you today?</td>
+                </tr>
+                <tr>
+                    <td>one of my drink is missing</td>
+                    <td>I'm sorry to hear that one of your drinks is missing from your order. I completely understand how frustrating that can be. Can you please provide me with more information about your order so that I can assist you further in resolving this issue? What was the missing drink that you had ordered?
+                    </td>
+                </tr>
+                <tr>
+                    <td>my hot latte</td>
+                    <td>
+                        We're sorry for the item(s) in your order is missing.
+We'll ensure more care when preparing and packing your order in the future.
+Can you please share your order ID so we can assist you better. (eg: 23012012345)
+                    </td>
+                </tr>
+                <tr>
+                    <td>21122900746</td>
+                    <td>To let us understand the issue better, can you please share an image of the mentioned issue? 🙏</td>
+                </tr>
+                <tr>
+                    <td>Skip</td>
+                    <td>Let us fix this for you as soon as possible.
+
+                        Can you please tell us which are the affected items?</td>
+                </tr>
+                <tr>
+                    <td>its 2 hot latte</td>
+                    <td>Please give us a moment, we are looking up your items.<br />
+
+                        Your affected items are
+                        2x Hot Cafe Latté
+
+                        The total refund amount is RM 19.40
+
+                        Kindly choose the refund options as below:
+                        [ZUS Balance, eWallet/Credit Card, Online Banking]
+                    </td>
+                </tr>
+                <tr>
+                    <td>ZUS Balance</td>
+                    <td>Let me pass you to one of our friendly live agents to proceed with the refund of RM 19.40 to your ZUS Balance. Please stay on the line.<br />
+                        Please hold, transferring you to our friendly live agent...                        
+                    </td>
                 </tr>
             </tbody>
         </table>
     
-        <!-- Spillage Section -->
-        <h3 class="issue-title">Spillage</h3>
-        <table class="table table-responsive">
-            <thead>
-                <tr>
-                    <th>User Input</th>
-                    <th>Expected Bot Reply</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rows for Missed Out Order -->
-                <tr>
-                    <td>one of my drinks spilled</td>
-                    <td>Please enter the order number in the correct format. (eg: 23092512345)</td>
-                </tr>
-                <tr>
-                    <td>21122900746</td>
-                    <td>Please enter your phone in the correct format. (eg: 60123456789)</td>
-                </tr>
-                <tr>
-                    <td>601110019991</td>
-                    <td>Sorry for the inconvenience. Can you please tell us more about what's missing in your order? We will do our best to resolve this for you.</td>
-                </tr>
-                <tr>
-                    <td>just spilled</td>
-                    <td>It seems like certain item(s) from your order spilled. Please let us know the missing item(s) below.</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3 class="issue-title">Wrong Order</h3>
-        <table class="table table-responsive">
-            <thead>
-                <tr>
-                    <th>User Input</th>
-                    <th>Expected Bot Reply</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Rows for Wrong Order -->
-                <tr>
-                    <td>I order two Frapuccino, but received two coffee latte</td>
-                    <td>Please enter the order number in the correct format. (eg: 23092512345)</td>
-                </tr>
-                <tr>
-                    <td>21122900630</td>
-                    <td>Please enter your phone in the correct format. (eg: 60123456789)</td>
-                </tr>
-                <tr>
-                    <td>601110019991</td>
-                    <td>It seems like certain item(s) from your order is wrong. Please let us know the wrong item(s) below.</td>
-                </tr>
-                <tr>
-                    <td>Submitted successfully</td>
-                    <td>Please select your preferred refund method.</td>
-                </tr>
-                <tr>
-                    <td>Refund: OPM</td>
-                    <td>If it's not too much trouble, feel free to share any remarks before we proceed with the refund?</td>
-                </tr>
-                <tr>
-                    <td>none</td>
-                    <td>I'm sorry I can't do what you need as an AI. Let me connect you to a real person who can help. Hang on for a moment, and they'll be here soon.</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3 class="issue-title">Out Of Stock</h3>
-        <table class="table table-responsive">
-            <thead>
-                <tr>
-                    <th>User Input</th>
-                    <th>Expected Bot Reply</th>
-                </tr>
-            </thead>
-            <tbody >
-                <!-- Rows for Out Of Stock -->
-                <tr>
-                    <td>why my item no more stock?</td>
-                    <td>Please enter the order number in the correct format. (eg: 23092512345)</td>
-                </tr>
-                <tr>
-                    <td>21122900746</td>
-                    <td>Please enter your phone in the correct format. (eg: 60123456789)</td>
-                </tr>
-                <tr>
-                    <td>601110019991</td>
-                    <td>It seems like certain item(s) from your order is Out-Of-Stock. Please let us know the missing item(s) below.</td>
-                </tr>
-                <tr>
-                    <td>Submitted successfully</td>
-                    <td>Please select your preferred refund method.</td>
-                </tr>
-                <tr>
-                    <td>any other alternatives?</td>
-                    <td>Sorry, but an invalid option was entered. Is there anything else I can assist you with?</td>
-                </tr>
-                <tr>
-                    <td>why my item no more stock?</td>
-                    <td>It seems like certain item(s) from your order is Out-Of-Stock. Please let us know the missing item(s) below.</td>
-                </tr>
-                <tr>
-                    <td>Submitted successfully</td>
-                    <td>Please select your preferred refund method.</td>
-                </tr>
-            </tbody>
-        </table>
+    
+        
     </div>
     
     <!-- Add any additional scripts here -->
