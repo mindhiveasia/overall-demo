@@ -19,10 +19,16 @@ function unloadIframe(iframeId) {
 // Function to check the current page and load/unload iframes accordingly
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.href.indexOf("sage") > -1) {
-        loadIframe('sageIframe', 'https://zus.kodedigital.expert/');
+        loadIframe('sageIframe', 'https://zusos.mindhive.asia/');
+    } else if (window.location.href.indexOf("page-bo") > -1) {
+        // Assuming URLs for 'page' and 'mage' iframes
+        loadIframe('pageBoIframe', 'https://dev-backoffice-mindhivepage.kodedigital.expert/');
+    } else if (window.location.href.indexOf("page-v0") > -1) {
+        // Assuming URLs for 'page' and 'mage' iframes
+        loadIframe('pageV0Iframe', 'https://demo-page.mindhive.asia/');
     } else if (window.location.href.indexOf("page") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
-        loadIframe('pageIframe', 'https://demo-page.mindhive.asia/');
+        loadIframe('pageV1Iframe', 'https://dev-userapp-mindhivepage.kodedigital.expert/dashboard');
     } else if (window.location.href.indexOf("profile-photo") > -1) {
         loadIframe('photoIframe', 'https://imu.mindhive.asia/');
     } else if (window.location.href.indexOf("location-finder") > -1) {
@@ -33,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // General function to unload all iframes before leaving the page
 window.addEventListener('beforeunload', function() {
     unloadIframe('sageIframe');
-    unloadIframe('pageIframe');
+    unloadIframe('pageBoIframe');
+    unloadIframe('pageV0Iframe');
+    unloadIframe('pageV1Iframe');
     unloadIframe('photoIframe');
     unloadIframe('locationFinderIframe');
 });
