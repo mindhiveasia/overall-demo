@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (window.location.href.indexOf("page") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
         loadIframe('pageV1Iframe', 'https://dev-page-user.mindhive.asia/dashboard');
+    } else if (window.location.href.indexOf("page-arap") > -1) {
+        loadIframe('pageArapIframe', 'https://mindhive-arap-demo.vercel.app/');
     } else if (window.location.href.indexOf("profile-photo") > -1) {
         loadIframe('photoIframe', 'https://imu.mindhive.asia/');
     } else if (window.location.href.indexOf("location-finder") > -1) {
@@ -42,6 +44,7 @@ window.addEventListener('beforeunload', function() {
     unloadIframe('pageBoIframe');
     unloadIframe('pageV0Iframe');
     unloadIframe('pageV1Iframe');
+    unloadIframe('pageArapIframe');
     unloadIframe('photoIframe');
     unloadIframe('locationFinderIframe');
 });
