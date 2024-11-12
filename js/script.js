@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Assuming URLs for 'page' and 'mage' iframes
         loadIframe('pageV1Iframe', 'https://dev-page-user.mindhive.asia/dashboard');
     } else if (window.location.href.indexOf("page-arap") > -1) {
-        loadIframe('pageArapIframe', 'https://mindhive-arap-demo.vercel.app/');
+        loadIframe('pageArapIframe', 'https://mindhive-arap-demo.vercel.app');
     } else if (window.location.href.indexOf("profile-photo") > -1) {
         loadIframe('photoIframe', 'https://imu.mindhive.asia/');
     } else if (window.location.href.indexOf("location-finder") > -1) {
