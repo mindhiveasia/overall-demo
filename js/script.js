@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
         loadIframe('sageIframe', 'https://zusos.mindhive.asia/');
     } else if (window.location.href.indexOf("page-bo") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
-        loadIframe('pageBoIframe', 'https://dev-backoffice-mindhivepage.kodedigital.expert/');
+        loadIframe('pageBoIframe', 'https://dev-page-backoffice.mindhive.asia/');
     } else if (window.location.href.indexOf("page-v0") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
         loadIframe('pageV0Iframe', 'https://demo-page.mindhive.asia/');
     } else if (window.location.href.indexOf("page") > -1) {
         // Assuming URLs for 'page' and 'mage' iframes
-        loadIframe('pageV1Iframe', 'https://dev-userapp-mindhivepage.kodedigital.expert/dashboard');
+        loadIframe('pageV1Iframe', 'https://dev-page-user.mindhive.asia/dashboard');
     } else if (window.location.href.indexOf("profile-photo") > -1) {
         loadIframe('photoIframe', 'https://imu.mindhive.asia/');
     } else if (window.location.href.indexOf("location-finder") > -1) {
