@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         loadIframe('photoIframe', 'https://imu.mindhive.asia/');
     } else if (window.location.href.indexOf("location-finder") > -1) {
         loadIframe('locationFinderIframe', 'https://zusos.mindhive.asia/');
+    } else if (window.location.href.indexOf("engage-cosec") > -1) {
+        loadIframe('engageCosecIframe', 'https://wezmart-chatbot-poc.mindhive.asia');
     }
 });
 
@@ -47,4 +49,5 @@ window.addEventListener('beforeunload', function() {
     unloadIframe('pageArapIframe');
     unloadIframe('photoIframe');
     unloadIframe('locationFinderIframe');
+    unloadIframe('engageCosecIframe');
 });
