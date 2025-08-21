@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindhive - Modern Business Solutions</title>
+    <!-- Add any additional metadata or links to CSS files here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/content.css">
+    <style>
+        /* Custom CSS for vertical centering */
+        .center-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Optional: for horizontal centering */
+            height: 100vh; /* Adjust the height as necessary */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <!-- <a class="navbar-brand" href="../index.html">
+            <i class="fas fa-arrow-left"></i> 
+        </a> -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../assets/images/mh-logo.svg" alt="Back" class="back-button-image">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <!-- <a class="nav-item nav-link" href="../index.html">Home</a> -->
+                <a class="nav-item nav-link" href="sage.html">SAGE</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PAGE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="page-arap.html">ARAP</a></li>
+                        <li><a class="dropdown-item" href="page.html">Purchase Order</a></li>
+                        <li><a class="dropdown-item" href="page.html">Invoice</a></li>
+                        <li><a class="dropdown-item" href="page.html">Waybill</a></li>
+                        <li><a class="dropdown-item" href="page.html">Custom Clearance</a></li>
+                        <li><a class="dropdown-item" href="page.html">University Qualifications</a></li>
+                        <li><a class="dropdown-item" href="page-v0.html">Legal Convenyancing</a></li>
+                        <li><a class="dropdown-item" href="page.html">HR Resume Filtering</a></li>
+                        <li><a class="dropdown-item" href="page-bo.html">Backoffice</a></li>
+                        <li><a class="dropdown-item" href="profile-photo.html">Student Card</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ENGAGE
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="engage.html">ENGAGE</a></li>
+                        <li><a class="dropdown-item" href="engage-property.html">ENGAGE (Property)</a></li>
+                        <li><a class="dropdown-item" href="engage-cosec.html">ENGAGE (Cosec)</a></li>
+                        <li><a class="dropdown-item" href="engage-senheng.html">ENGAGE (SenHeng)</a></li>
+                        <li><a class="dropdown-item" href="engage-perodua.html">ENGAGE (Perodua)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-spacer"></div> <!-- Invisible spacer -->
+    </nav>
+
+    <!-- Content Section -->
+    <div class="ratio" style="height: 100vh;">
+        <iframe id="engageCosecIframe" class="embed-responsive-item mt-4 pt-3">
+            Your browser does not support iframes.
+        </iframe>
+    </div>
+
+    <!-- Add any additional scripts here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+    <script type="module">
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+        Chatbot.init({
+            chatflowid: "01b9629a-36a0-4760-94d4-7ef95820c938",
+            apiHost: "https://farmshop-dev-flowise.mindhive.asia",
+        })
+    </script>
+</body>
+</html>
