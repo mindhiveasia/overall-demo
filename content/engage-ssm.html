@@ -18,6 +18,9 @@
             justify-content: center; /* Optional: for horizontal centering */
             height: 100vh; /* Adjust the height as necessary */
         }
+        #app > div > div > div > div.px-0.py-3.flex.justify-center > a {
+            display:none !important
+        }
     </style>
 </head>
 <body>
@@ -42,21 +45,22 @@
     <!-- Custom JS -->
     <script src="../js/script.js"></script>
     
-    <!-- Chatwoot Chatbot -->
     <script>
-      (function(d,t) {
-        var BASE_URL="https://app.chatwoot.com";
-        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=BASE_URL+"/packs/js/sdk.js";
-        g.async = true;
-        s.parentNode.insertBefore(g,s);
-        g.onload=function(){
-          window.chatwootSDK.run({
-            websiteToken: 'p9Mz4L4mUBddF9pWjWUfvPcf',
-            baseUrl: BASE_URL
-          })
-        }
-      })(document,"script");
-    </script>
+        (function(d,t) {
+          var BASE_URL="https://ssm-omnichannel-prod.mindhive.asia";
+          var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=BASE_URL+"/packs/js/sdk.js";
+          g.async=true;
+          s.parentNode.insertBefore(g,s);
+          g.onload=function(){
+            window.chatwootSDK.run({
+              websiteToken: 'biW47SQCEMvW81A5psVuW46w',
+              baseUrl: BASE_URL
+            })
+          }
+        })(document,"script");
+      </script>
+  
 </body>
 </html>
+
